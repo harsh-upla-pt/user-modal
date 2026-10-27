@@ -8,6 +8,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Layout from "./Layout.jsx";
 import ForgotPassword from "./components/ForgotPassword";
+import UserProfile from "./components/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: "forgot-password",
         element: <ForgotPassword />,
+      },
+      {
+        path: "user",
+        element: <Login />,
+      },
+      {
+        path: "user/:user",
+        element: <UserProfile />,
       },
     ],
   },
